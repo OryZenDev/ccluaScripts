@@ -12,7 +12,7 @@ end
 function findCoal()
 	local slotNum = 0
 	repeat
-		slotNum += 1
+		slotNum = slotNum + 1
 	until slotNum >= 16 or turtle.getItemDetail(slotNum).name == "minecraft:coal"
 	
 	return slotNum
@@ -43,7 +43,7 @@ fuel()
 local x = 0
 if tonumber(args[1]) == -1 then x = -999999 end
 repeat 
-	x += 1
+	x = x + 1
 	tunnel()
 	fuel()
 	if urgentCareNeeded == true then break end
