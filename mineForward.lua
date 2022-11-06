@@ -48,3 +48,4 @@ repeat
 	fuel()
 	if urgentCareNeeded == true then break end
 until x >= tonumber(args[1])
+os.setComputerLabel(computerName)
