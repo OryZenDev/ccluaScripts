@@ -48,6 +48,15 @@ repeat
 	fuel()
 	if urgentCareNeeded == true then break end
 until x >= tonumber(args[1])
+if tostring(args[2]) == "comeBack" then
+	turtle.turnRight()
+	turtle.turnRight()
+	local y = 0
+	repeat
+		y = y + 1
+		turtle.forward()
+	until y >= tonumber(args[1])
+end
 os.setComputerLabel(computerName)
 
 --// Pastebin: 75Lknc3W //--
