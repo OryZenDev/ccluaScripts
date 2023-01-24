@@ -1,5 +1,3 @@
 local args = {...}
 
-function pos(args[1], args[2])
-	workspace.TestingBox.Position = base.Position + Vector3.new(base.Size.X/2.5, 4, base.Size.Z/2.5)
-end
+workspace.TestingBox.Position = args[1].Position + Vector3.new(args[1].Size.X/2.5, 4, args[1].Size.Z/2.5)
